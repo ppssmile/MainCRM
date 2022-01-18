@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+                  <Menu mnemonicParsing="false" text="New ...">
+                     <items>
+                  <MenuItem mnemonicParsing="false" text="Contract" />
+                        <MenuItem mnemonicParsing="false" text="Input objects" />
+                        <MenuItem mnemonicParsing="false" text="Output objects" />
+                        <MenuItem mnemonicParsing="false" text="Akt of complite works" />
+                        <MenuItem mnemonicParsing="false" text="Outgoin payment" />
+                        <MenuItem mnemonicParsing="false" text="Incoming payment" />
+                     </items>
+                  </Menu>
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label alignment="CENTER" layoutX="453.0" layoutY="7.0" text="НАИМЕНОВАНИЕ ОРГАНИЗАЦИИ">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TabPane layoutX="21.0" layoutY="37.0" prefHeight="738.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+              <tabs>
+                <Tab text="Договора">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="359.0" />
+                  </content>
+                </Tab>
+                <Tab text="Счета, накладные, товарные чеки">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="1106.0" />
+                  </content>
+                </Tab>
+                  <Tab text="Акты выполненных работ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="1106.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Входные документы">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="1106.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Исходящие документы">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="1106.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Книги учета">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="1106.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Материалы">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="1106.0" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
